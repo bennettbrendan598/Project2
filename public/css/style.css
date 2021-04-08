@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    min-height: 100vh;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video { 
+        width:auto;
+        height: 100%;
+    }
+} 
+
+.navbar {
+    position: absolute;
+    width: 57.5px;
+    height: 100%;
+    background: #3e0748;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navbar:hover {
+    width: 300px;
+}
+
+.navbar ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.navbar ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navbar ul li:hover {
+    background: #ea1d63
+}
+
+.navbar ul li a {
+    position: relative;
+    display: none;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navbar ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.navbar ul li a .icon .fas {
+    font-size: 24px;
+}
+
+.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #330748;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    background: #ea1d63;
+}
+
+.toggle .fas {
+    font-size: 45px;
+    text-align: center;
+}
+
+.header {
+    font-size: 45px;
+    font-family: 'MuseoModerno', cursive;
+    font-weight: bold;
+    text-align: center;
+    color: aqua;
+}
