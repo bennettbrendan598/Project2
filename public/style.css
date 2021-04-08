@@ -36,16 +36,70 @@
 
 .navbar {
     position: absolute;
-    width: 100px;
+    width: 57.5px;
     height: 100%;
     background: #3e0748;
     transition: 0.5s;
+    overflow: hidden;
+}
+
+.navbar:hover {
+    width: 300px;
+}
+
+.navbar ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.navbar ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navbar ul li:hover {
+    background: #ea1d63
+}
+
+.navbar ul li a {
+    position: relative;
+    display: none;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navbar ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.navbar ul li a .icon .fas {
+    font-size: 24px;
 }
 
 .header {
     font-size: 45px;
     font-family: 'MuseoModerno', cursive;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     color: aqua;
 }
