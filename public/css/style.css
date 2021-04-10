@@ -40,7 +40,8 @@
     overflow: hidden;
 }
 
-.navbar:hover {
+.navbar:hover,
+.navbar.active {
     width: 300px;
 }
 
@@ -100,18 +101,42 @@
     cursor: pointer;
 }
 
-.toggle:hover {
+.toggle.active {
     background: #ea1d63;
 }
 
-.toggle .fas {
-    font-size: 45px;
+.toggle:before {
+    content: '\f0c9';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
     text-align: center;
+    font-size: 24px;
+    color: #fff;
 }
+
+.toggle.active:before {
+    content: '\f00d';
+
+}
+
 .header {
     font-size: 45px;
     font-family: 'MuseoModerno', cursive;
     font-weight: bold;
     text-align: center;
     color: aqua;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        left: -60px;
+    }
+    .navbar.active {
+        left: 0px;
+        width: 100%
+    }
 }
