@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
@@ -39,23 +40,42 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="./login.html">
+                    <span class="icon"><i class="fas fa-sign-in-alt"></i></i></span>
+                    <span class="title">Sign In</span>
+                </a>
+            </li>
+            <li>
+                {{#if logged_in}}
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></i></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                {{/if}}
+            </li>
+            <li>
+                <a href="./createUser.html">
                     <span class="icon"><i class="fas fa-user-plus"></i></span>
-                    <span class="title">Sign Up</span>
+                    <span class="title">Create an Account</span>
                 </a>
             </li>
         </ul>
     </div>
-    <div class="toggle">
-        <i class="fas fa-bars"></i>
+    <div class="toggle" onclick="toggleMenu()">
+        <script>
+            function toggleMenu() {
+                let navbar = document.querySelector('.navbar')
+                let toggle = document.querySelector('.toggle')
+                navbar.classList.toggle('active');
+                toggle.classList.toggle('active')
+            }
+        </script>
     </div>
-        
     <header class="header">
         MyCryptoLedger
     </header>
-
-    {{{body}}}
-
+    
+    {{{ body }}}
 </body>
 
 </html>
