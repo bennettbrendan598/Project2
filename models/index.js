@@ -1,4 +1,3 @@
-const User = require('./User');
-const Cryptos = require('./cryptos')
+const User = require('./Users');
 
-module.exports = { User,Cryptos };
+module.exports = { User };

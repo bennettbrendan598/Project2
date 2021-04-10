@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .body {
     min-height: 100vh;
 }
+
 .video-container {
     position: absolute;
     top: 0;
@@ -33,13 +35,15 @@
     position: absolute;
     width: 57.5px;
     height: 100%;
-    background: #3E0748;
+    background: #3e0748;
     transition: 0.5s;
     overflow: hidden;
 }
+
 .navbar:hover {
     width: 300px;
 }
+
 .navbar ul {
     position: absolute;
     top: 0;
@@ -51,9 +55,11 @@
     width: 100%;
     list-style: none;
 }
+
 .navbar ul li:hover {
-    background: #EA1D63
+    background: #ea1d63
 }
+
 .navbar ul li a {
     position: relative;
     display: none;
@@ -79,9 +85,11 @@
     text-align: start;
     white-space: nowrap;
 }
+
 .navbar ul li a .icon .fas {
     font-size: 24px;
 }
+
 .toggle {
     position: absolute;
     top: 0;
@@ -91,9 +99,11 @@
     background: #330748;
     cursor: pointer;
 }
+
 .toggle:hover {
-    background: #EA1D63;
+    background: #ea1d63;
 }
+
 .toggle .fas {
     font-size: 45px;
     text-align: center;
@@ -105,4 +115,3 @@
     text-align: center;
     color: aqua;
 }
-
