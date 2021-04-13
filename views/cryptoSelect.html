@@ -10,68 +10,35 @@
 </head>
 
 <body>
-<h1>Please select which of the following cryptocurrency you currently own:</h1>
-
-<form class="form">
-    <div>
-        <input type="checkbox" id="BTC" name="BTC">
-        <label for="BTC">Bitcoin (BTC)</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="BCH" name="BCH">
-        <label for="BCH">Bitcoin Cash (BCH)</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="LTC" name="LTC">
-        <label for="LTC">Litecoin (LTC)</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="ADA" name="ADA">
-        <label for="ADA">Cardano (ADA)</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="ETH" name="ETH">
-        <label for="ETH">Ethereum (ETH)</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="DOT" name="DOT">
-        <label for="DOT">Polkadot</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="USDT" name="USDT">
-        <label for="USDT">Tether</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="BNB" name="BNB">
-        <label for="BNB">Binance Coin (BNB)</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="TRX" name="TRX">
-        <label for="TRX">Tron (TRX)</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="LINK" name="LINK">
-        <label for="LINK">Chainlink (LINK)</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="DOGE" name="DOGE">
-        <label for="DOGE">Dogecoin</label>
-    </div>
-
-    <div>
-        <button class="btn btn-primary" type="submit">Submit</button>
-    </div>
-</form>
+    <div class="container">
+        <div class="title">Please input the amount of each cryptocurrency you currently own:</div>
+        <div class="crypto-details">
+        <form class="form selectCrypto-form" action="#">
+        <label for="BTC">Bitcoin (BTC):</label><br>
+        <input type="text" id="BTC" name="BTC"><br>
+        <label for="BCH">Bitcoin Cash (BCH):</label><br>
+        <input type="text" id="BCH" name="BCH"><br>
+        <label for="LTC">Litecoin (LTC):</label><br>
+        <input type="text" id="LTC" name="LTC"><br>
+        <label for="ETH">Ethereum (ETH):</label><br>
+        <input type="text" id="ETH" name="ETH"><br>
+        <label for="ADA">Cardano (ADA):</label><br>
+        <input type="text" id="ADA" name="ADA"><br>
+        <label for="DOT">Polkadot (DOT):</label><br>
+        <input type="text" id="DOT" name="DOT"><br>
+        <label for="USDT">Tether (USDT):</label><br>
+        <input type="text" id="USDT" name="USDT"><br>
+        <label for="BNB">Binance Coin (BNB):</label><br>
+        <input type="text" id="BNB" name="BNB"> <br>
+        <label for="TRX">Tron (TRX):</label><br>
+        <input type="text" id="TRX" name="TRX"><br>
+        <label for="LINK">Chainlink (LINK):</label><br>
+        <input type="text" id="LINK" name="LINK"><br>
+        <label for="DOGE">Dogecoin (DOGE):</label><br>
+        <input type="text" id="DOGE" name="DOGE"><br>
+        </div>
+        <input type="submit" value="Save">
+    </form>
 </body>
 
 </html>
