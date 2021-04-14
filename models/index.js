@@ -1,3 +1,15 @@
-const User = require('./Users');
+const User = require('./User');
+const Crypto = require('./crypto');
 
-module.exports = { User };
+
+//create associations
+User.hasMany(Crypto, {
+    foreignKey: 'user_id'
+});
+
+
+Crypto.belongsTo(User, {
+    foreignKey: 'user_id',
+});
+
+module.exports = { User,Crypto };

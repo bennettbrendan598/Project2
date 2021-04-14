@@ -1,12 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class Crypto extends Model {
-  checkPassword(loginPw) {
-    return bcrypt.compareSync(loginPw, this.password);
-  }
-}
+class Crypto extends Model {}
+
 
 Crypto.init(
   {
@@ -21,9 +17,16 @@ Crypto.init(
       allowNull: false,
     },
     logo: {
-      type: Sequelize.BLOB('long'),
-      allowNull: false,
+      type: DataTypes.STRING,
+      allowNull: true,
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id'
+      }
+    }
     
   },
   {
