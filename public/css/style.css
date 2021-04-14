@@ -35,9 +35,10 @@
     position: absolute;
     width: 57.5px;
     height: 100%;
-    background: #3e0748;
+    background: #418ea7;
     transition: 0.5s;
     overflow: hidden;
+    font-family: 'MuseoModerno';
 }
 
 .navbar:hover,
@@ -58,7 +59,7 @@
 }
 
 .navbar ul li:hover {
-    background: #ea1d63
+    background: #1b4e5f;
 }
 
 .navbar ul li a {
@@ -97,12 +98,12 @@
     right: 0;
     width: 60px;
     height: 60px;
-    background: #330748;
+    background: #418ea7;
     cursor: pointer;
 }
 
 .toggle.active {
-    background: #ea1d63;
+    background: #1b4e5f;
 }
 
 .toggle:before {
@@ -128,7 +129,8 @@
     font-family: 'MuseoModerno', cursive;
     font-weight: bold;
     text-align: center;
-    color: aqua;
+    text-decoration: underline #b1d7e4;
+    color: #b1d7e4;
 }
 
 @media (max-width: 767px) {
