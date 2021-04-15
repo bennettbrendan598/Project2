@@ -4,7 +4,8 @@ const Crypto = require('./crypto');
 
 //create associations
 User.hasMany(Crypto, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
 });
 
 
