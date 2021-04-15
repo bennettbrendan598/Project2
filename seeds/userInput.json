@@ -1,21 +1,21 @@
 [
     {
-      "name": "bdrissa",
+      "username": "bdrissa",
       "email": "bdrissa@yahoo.fr",
       "password": "pass12345"
     },
     {
-      "name": "bbrennett",
+      "username": "bbrennett",
       "email": "bbrennett@gmail.com",
       "password": "pass12345"
     },
     {
-      "name": "mlee",
+      "username": "mlee",
       "email": "mlee@aol.com",
       "password": "pass12345"
     },
     {
-      "name": "socampo",
+      "username": "socampo",
       "email": "socampo@msn.com",
       "password": "pass12345"
     }
