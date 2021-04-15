@@ -6,29 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body>
-    <header class="header login-header">Login</header>
+<div>
+    <div class="create-acct-body login-body">
+        <div class="container create-acct-container">
+            <div class="title create-title login-title">Sign In:</div>
+            <form class="form newUser-form" action="#">
+                <div class="user-details"></div>
+                <div class="form-group">
+                    <label for="user-firstName">Username:</label>
+                    <input class="form-input" type="text" id="user-firstName" placeholder="Username123" required>
+                </div>
 
-    <container class="login-container">
-        <form class="form login-form">
-            <div class="form-group">
-                <label for="email-login">email:</label>
-                <input class="form-input" type="text" id="email-login" />
-            </div>
-            <div class="form-group">
-                <label for="password-login">password:</label>
-                <input class="form-input" type="password" id="password-login" />
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary login-btn" type="submit">login</button>
-            </div>
-        </form>
-    </container>
+                <br>
 
-    <script src="../public/js/login.js"></script>
-</body>
+                <div class="form-group">
+                    <label for="user-lastName login-password">Password:</label>
+                    <input class="form-input login-password" type="password" id="user-lastName" placeholder="Password123!">
+                </div>
+
+                <br>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <script src="../public/js/login.js"></script>
+    </div>
+</div>
+
 
 </html>

@@ -171,7 +171,7 @@
 .create-acct-container {
   max-width: 700px;
   width: 100%;
-  background: #2e7085;
+  background: #418ea7;
   padding: 25px 30px;
   border-radius: 5px;
 }
@@ -268,6 +268,75 @@ form .create-btn:hover {
   color: red;
 }
 
+.login-title {
+  font-family: 'MuseoModerno';
+}
+
 .btn {
   color: red;
 }
+
+.login-password {
+  align-content: right;
+}
+
+/* Contact Us Styling */
+
+.contact-div {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  }
+
+.contact-container {
+  max-width: 700px;
+  width: 100%;
+  background: #418ea7;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.contact-title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.contact-content input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.contact-btn {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  box-shadow: aqua;
+  color: #2e7085;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+}
+
+
+
+
