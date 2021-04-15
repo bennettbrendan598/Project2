@@ -2,10 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.body {
-  min-height: 100vh;
+  font-family: 'MuseoModerno';
+  color: rgb(0, 0, 0);
 }
 
 .video-container {
@@ -39,14 +37,6 @@
   transition: 0.5s;
   overflow: hidden;
   font-family: 'MuseoModerno';
-=======
-    position: absolute;
-    width: 57.5px;
-    height: 100%;
-    background: #418ea7;
-    transition: 0.5s;
-    overflow: hidden;
-    font-family: 'MuseoModerno';
 }
 
 .navbar:hover,
@@ -144,7 +134,7 @@
 
 }
 
-.header {
+.header-index {
   font-size: 45px;
   font-family: 'MuseoModerno', cursive;
   font-weight: bold;
@@ -167,4 +157,117 @@
       left: 0px;
       width: 100%
   }
+}
+
+/* STYLING FOR "CREATE AN ACCOUNT PAGE"*/
+
+.create-acct-body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-acct-container {
+  max-width: 700px;
+  width: 100%;
+  background: #2e7085;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.create-acct-container .title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.create-acct-container form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-details .form-group {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .form-group .user-details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+form .user-details .form-group input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .form-group input:focus,
+.user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+form .create-btn {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  box-shadow: aqua;
+  color: #2e7085;
+}
+
+form .create-btn:hover {
+  cursor: pointer;
+}
+
+/* STYLING FOR LEDGER */
+
+.ledger-body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.ledger-container {
+  max-width: 700px;
+  width: 100%;
+  background: #418ea7;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.ledger-container .title {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/*LOGIN STYLING*/
+
+.login-header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
+.btn {
+  color: red;
 }
