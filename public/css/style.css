@@ -259,14 +259,14 @@ form .create-btn:hover {
   justify-content: center;
   align-items: center;
 }
-
+/* 
 .login-form {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
   color: red;
-}
+} */
 
 .login-title {
   font-family: 'MuseoModerno';

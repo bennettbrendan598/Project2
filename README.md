@@ -1,1 +1,0 @@
-#This is a cryptocurrency project
