@@ -12,6 +12,10 @@ Crypto.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     number: {
       type: DataTypes.DECIMAL,
       allowNull: false,
