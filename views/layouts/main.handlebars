@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/style.css">
 
-    
-    {{!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> --}}
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a932d7cef3.js" crossorigin="anonymous"></script>
@@ -29,13 +25,13 @@
     <div class="navbar">
         <ul>
             <li>
-                <a href="#">
+                <a href="/">
                     <span class="icon"><i class="fas fa-home"></i></span>
                     <span class="title">Home</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="/about">
                     <span class="icon"><i class="fas fa-info-circle"></i></i></i></span>
                     <span class="title">About</span>
                 </a>
@@ -46,26 +42,31 @@
                     <span class="title">Contact</span>
                 </a>
             </li>
+            {{#if logged_in}}
+            <li>
+                
+                    <a href="/logout">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></i></span>
+                        <span class="title" >Sign Out</span>
+                    </a>
+               
+            </li>
+            
+            {{else}}
             <li>
                 <a href="/login">
                     <span class="icon"><i class="fas fa-sign-in-alt"></i></i></span>
                     <span class="title">Sign In</span>
                 </a>
             </li>
-            <li>
-                {{#if logged_in}}
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-sign-out-alt"></i></i></span>
-                        <span class="title">Sign Out</span>
-                    </a>
-                {{/if}}
-            </li>
+            
             <li>
                 <a href="/signup">
                     <span class="icon"><i class="fas fa-user-plus"></i></span>
                     <span class="title">Create an Account</span>
                 </a>
             </li>
+             {{/if}}
         </ul>
     </div>
     <div class="toggle" onclick="toggleMenu()">
@@ -83,6 +84,12 @@
     </header>
     
     {{{ body }}}
+
+    
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
