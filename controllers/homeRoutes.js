@@ -3,17 +3,22 @@ const { Project, User } = require('../models');
 const withAuth = require('../utils/auth');
 global.fetch = require("node-fetch");
  
+
+
+router.get('/signup', async (req, res) => {
  
+  res.render('signup');
+
+});
 
 router.get('/', async (req, res) => {
  
-  
     // Pass serialized data and session flag into template
     res.render('homepage');
   
 });
 
-router.get('/project/:id', async (req, res) => {
+router.get('/crypto/:id', async (req, res) => {
   try {
     const projectData = await Project.findByPk(req.params.id, {
       include: [
