@@ -11,6 +11,12 @@ router.get('/signup', async (req, res) => {
 
 });
 
+
+
+// router.get('/layouts/main', async (req, res) => {
+//   res.render('/layouts/main')
+// });
+
 router.get('/', async (req, res) => {
  
     // Pass serialized data and session flag into template

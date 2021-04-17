@@ -26,7 +26,7 @@ var handleErrors = (response) => {
         let cardHtml;
         let infodata = response.Data;
         console.log(response.Data[1].title);
-        for (var i = 0; i <= 2; i++) {
+        for (var i = 0; i <= 2; i++) { //This is the for loop that controls the amount of articles on the homepage
             var infoBlock = infodata[i];
             informationArray.push(infoBlock);
         }
@@ -36,17 +36,30 @@ var handleErrors = (response) => {
             console.log(informationArray);
             
             cardHtml += `
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src=${news.imageurl} alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title border-bottom pb-3">${news.title} <a href=${news.url} target="_blank" class="float-right btn btn-sm btn-info d-inline-flex share"><i class="fas fa-share-alt"></i></a></h5>
-                        <p class="card-text">${news.body}.</p>
-                        <a href=${news.url} target="_blank" class="btn btn-sm btn-info float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+    <div span class='full-homepage'>
+        <div span class='homepage-body'
+            <div span class='news-grid'>
+                <div span class="news-grid-item'>
+                    <div span class="news-card>
+                        <img span class="news-image" src=${news.imageurl} alt="Image Can't Load">
+                        <div span class="card-content">
+                        <h1 span class="article-title">${news.title}</h1>
+                        <p span class="article-preview">${news.body}</p>
+                        <button onclick=${news.url} span class="article-button" target="_blank">
+                            Continue Reading...
+                        </button>
                     </div>
-                </div> 
+                </div>
             </div>
-            `;
+        </div>
+    </div>
+                            
+                        
+
+            
+            `
+            
+            ;
 
             var mainRow = document.getElementById("showCard");
             mainRow.innerHTML = cardHtml ;

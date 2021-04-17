@@ -337,6 +337,32 @@ form .create-btn:hover {
   cursor: pointer;
 }
 
+.article-button {
+  color: red;
+}
+
+/* Homepage styling */
+
+/* .full-homepage {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.homepage-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.news-grid {
+  display: grid;
+  width: 114em;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: start;
+} */
+
 
 
 
