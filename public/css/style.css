@@ -272,8 +272,16 @@ form .create-btn:hover {
   font-family: 'MuseoModerno';
 }
 
-.btn {
-  color: red;
+.login-btn {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  box-shadow: aqua;
+  color: #2e7085;
+}
+
+.login-btn:hover {
+  cursor: pointer;
 }
 
 .login-password {
